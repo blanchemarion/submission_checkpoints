@@ -1,0 +1,6 @@
+{
+  "layout": "NCT",
+  "computed_on": "TRAIN_ONLY",
+  "timepoints_used_for_stats": "[0:90)",
+  "eps": 1e-06
+}

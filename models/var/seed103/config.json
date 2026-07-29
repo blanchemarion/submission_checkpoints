@@ -1,0 +1,65 @@
+{
+  "architecture": "linear-var",
+  "architecture_config": {
+    "T_in": 90,
+    "T_out": 90,
+    "bias": true,
+    "n_vars": 16
+  },
+  "checkpoint_metrics": {
+    "epoch": 4,
+    "train_loss": 0.21230367344358694,
+    "val_ar_loss": 0.6317822933197021,
+    "val_tf_loss": 0.20677718023459116
+  },
+  "model_family": "var",
+  "normalization": {
+    "mean_file": "normalization_mean.npy",
+    "metadata_file": "normalization_meta.json",
+    "required": true,
+    "source": "checkpoint-config",
+    "source_base": "train_norm_stats_data100_ba16_Tin90_Tout90_seed103_var",
+    "std_file": "normalization_std.npy"
+  },
+  "notes": [],
+  "objective": {
+    "mode_recorded_in_checkpoint": null
+  },
+  "schema_version": 1,
+  "seed": 103,
+  "task": "widefield-90-to-90",
+  "training_config": {
+    "T_in": 90,
+    "T_out": 90,
+    "batch_size": 2048,
+    "checkpoint_every": 25,
+    "checkpoint_first_epoch": 5,
+    "data_path": "data_processed/data100_ba16.npy",
+    "early_stop_min_delta": 1e-06,
+    "early_stop_patience": 25,
+    "learning_rate": 0.001,
+    "model_name": "VAR_BASELINE",
+    "n_vars": 16,
+    "normalization_stats_base": "data_processed/train_norm_stats_data100_ba16_Tin90_Tout90_seed103_var",
+    "num_epochs": 150,
+    "num_workers": 8,
+    "processed_val_examples_path": "data_processed/processed_val_data100_ba16_Tin90_Tout90_seed103_var.npy",
+    "processed_val_seq_indices_path": "data_processed/processed_val_seq_indices_data100_ba16_Tin90_Tout90_seed103_var.npy",
+    "random_seed": 103,
+    "save_dir": "checkpoints_VAR_BASELINE_90_90",
+    "train_ratio": 0.8,
+    "weight_decay": 1e-05
+  },
+  "weights": {
+    "dtype": [
+      "torch.float32"
+    ],
+    "file": "model.safetensors",
+    "format": "safetensors",
+    "original_checkpoint": null,
+    "parameter_count": 23056,
+    "selection": "validation-selected best checkpoint",
+    "source_checkpoint": "checkpoints_VAR_BASELINE_90_90_seed103/best_model.pt",
+    "tensor_count": 2
+  }
+}

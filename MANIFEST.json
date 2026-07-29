@@ -1,0 +1,583 @@
+{
+  "algorithm": "sha256",
+  "file_count": 115,
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "301166a45e0859ebb42ef9a96a57bb328e1ffa72896d419cdc7073a19a4508b5",
+      "size_bytes": 1091
+    },
+    {
+      "path": "metadata/widefield_data_metadata.json",
+      "sha256": "6b2002c42e39c6e6a8875e7a45a64eb507f81b822379fca76701fd8901839e7f",
+      "size_bytes": 2240
+    },
+    {
+      "path": "MODEL_INDEX.json",
+      "sha256": "8b84b429a5c0dda19d763078dbd38343dfeec741c0eeebdeb79bcbda7a4d37fc",
+      "size_bytes": 9925
+    },
+    {
+      "path": "modeling/cdmm_ssm.py",
+      "sha256": "d83d4d076635c178b7a8de3655e6338c859b9e06c934ec116309b4d113c8c392",
+      "size_bytes": 31720
+    },
+    {
+      "path": "modeling/gru_ar.py",
+      "sha256": "1ccb39df1f2cf13b8a0b0de25db65ea1eb1b37cc1b7a1ebea6a2b029a2070fa2",
+      "size_bytes": 7085
+    },
+    {
+      "path": "modeling/linear_var.py",
+      "sha256": "b1055d304d0e6725b68a0c97ead24e57e338a25da3b499761b2243de654fa54f",
+      "size_bytes": 3616
+    },
+    {
+      "path": "modeling/mlp_2p.py",
+      "sha256": "886659ebe3551d281e1d4bbf42b83ca484fa699d8fd4fe6aa14c21ab07e773c4",
+      "size_bytes": 5547
+    },
+    {
+      "path": "modeling/transformer.py",
+      "sha256": "7b1d97afc2e7a686ecbfd721fb27e1766de13e235924b3574fbf296e0f95f1a2",
+      "size_bytes": 16694
+    },
+    {
+      "path": "models/ar-kv/seed101/config.json",
+      "sha256": "7e9d17a825e2d6d373d1d0ade8eaee334aa1ceb94112f8d54385c7da6883006f",
+      "size_bytes": 2422
+    },
+    {
+      "path": "models/ar-kv/seed101/model.safetensors",
+      "sha256": "425b85ee1b6adfc5c89ca76c98653cbae2f06ec9b2c61c058179d26564247908",
+      "size_bytes": 1135416
+    },
+    {
+      "path": "models/ar-kv/seed101/normalization_mean.npy",
+      "sha256": "95b43a5a337bfa4b82c4e0a1c99feb8b11b2d11b447aaa63d68865f2249b97b7",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/ar-kv/seed101/normalization_meta.json",
+      "sha256": "d073311fd2058b38cc748296e647920eaa713170a5e3da7ac329b6ef5cc3cdc7",
+      "size_bytes": 114
+    },
+    {
+      "path": "models/ar-kv/seed101/normalization_std.npy",
+      "sha256": "5b04dd79ecfa09afbcc9a94fb6b1f5864ab6f906297b91b25b3a48c99aa54e67",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/ar-kv/seed102/config.json",
+      "sha256": "6daaa493048171054f872797c7d106fda8666173b3be97a769a738f607e44b37",
+      "size_bytes": 2769
+    },
+    {
+      "path": "models/ar-kv/seed102/model.safetensors",
+      "sha256": "8c961f4b4915392f147f6cee66f0a69309aa0613758db255543a35d3169fc66c",
+      "size_bytes": 1135416
+    },
+    {
+      "path": "models/ar-kv/seed102/normalization_mean.npy",
+      "sha256": "95b43a5a337bfa4b82c4e0a1c99feb8b11b2d11b447aaa63d68865f2249b97b7",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/ar-kv/seed102/normalization_meta.json",
+      "sha256": "d073311fd2058b38cc748296e647920eaa713170a5e3da7ac329b6ef5cc3cdc7",
+      "size_bytes": 114
+    },
+    {
+      "path": "models/ar-kv/seed102/normalization_std.npy",
+      "sha256": "5b04dd79ecfa09afbcc9a94fb6b1f5864ab6f906297b91b25b3a48c99aa54e67",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/ar-kv/seed103/config.json",
+      "sha256": "6be2ef95dad83ce40bc7acc4401d8276ddddbe83d9d98fc074d22852aaaab042",
+      "size_bytes": 2770
+    },
+    {
+      "path": "models/ar-kv/seed103/model.safetensors",
+      "sha256": "594018e125a671b2877d14cb147898d3502c3b3257f9528f6203848c036adef0",
+      "size_bytes": 1135416
+    },
+    {
+      "path": "models/ar-kv/seed103/normalization_mean.npy",
+      "sha256": "95b43a5a337bfa4b82c4e0a1c99feb8b11b2d11b447aaa63d68865f2249b97b7",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/ar-kv/seed103/normalization_meta.json",
+      "sha256": "d073311fd2058b38cc748296e647920eaa713170a5e3da7ac329b6ef5cc3cdc7",
+      "size_bytes": 114
+    },
+    {
+      "path": "models/ar-kv/seed103/normalization_std.npy",
+      "sha256": "5b04dd79ecfa09afbcc9a94fb6b1f5864ab6f906297b91b25b3a48c99aa54e67",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/cdmm-ssm/seed101/config.json",
+      "sha256": "4625d47f8baa6b4daaa7d2c34bd56fc5ca69008c6dba9687df051bc78f2ed49c",
+      "size_bytes": 4552
+    },
+    {
+      "path": "models/cdmm-ssm/seed101/model.safetensors",
+      "sha256": "c3bd80f7cd0a990ba7632132f2923c31ac8570f24d180a109c72143b7598f45c",
+      "size_bytes": 341624
+    },
+    {
+      "path": "models/cdmm-ssm/seed101/normalization_mean.npy",
+      "sha256": "95b43a5a337bfa4b82c4e0a1c99feb8b11b2d11b447aaa63d68865f2249b97b7",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/cdmm-ssm/seed101/normalization_meta.json",
+      "sha256": "d073311fd2058b38cc748296e647920eaa713170a5e3da7ac329b6ef5cc3cdc7",
+      "size_bytes": 114
+    },
+    {
+      "path": "models/cdmm-ssm/seed101/normalization_std.npy",
+      "sha256": "5b04dd79ecfa09afbcc9a94fb6b1f5864ab6f906297b91b25b3a48c99aa54e67",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/cdmm-ssm/seed102/config.json",
+      "sha256": "a236e068f37b27c095847790993e93922a285f0e7a3274ce3f47973364ebe0e4",
+      "size_bytes": 4605
+    },
+    {
+      "path": "models/cdmm-ssm/seed102/model.safetensors",
+      "sha256": "278fc9a7b9a655ba6d77617fc4a9d2614dd1fc06b76e6ed5ca34251c4bb9da57",
+      "size_bytes": 341624
+    },
+    {
+      "path": "models/cdmm-ssm/seed102/normalization_mean.npy",
+      "sha256": "95b43a5a337bfa4b82c4e0a1c99feb8b11b2d11b447aaa63d68865f2249b97b7",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/cdmm-ssm/seed102/normalization_meta.json",
+      "sha256": "d073311fd2058b38cc748296e647920eaa713170a5e3da7ac329b6ef5cc3cdc7",
+      "size_bytes": 114
+    },
+    {
+      "path": "models/cdmm-ssm/seed102/normalization_std.npy",
+      "sha256": "5b04dd79ecfa09afbcc9a94fb6b1f5864ab6f906297b91b25b3a48c99aa54e67",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/cdmm-ssm/seed103/config.json",
+      "sha256": "83d7d42e6d040816cc74ca87cdf778c82ddaac8b02acacba13b21dbd92377787",
+      "size_bytes": 4617
+    },
+    {
+      "path": "models/cdmm-ssm/seed103/model.safetensors",
+      "sha256": "d5e226b741d8cbb39f57e29b1d95016dfd1263a380c9e2102c6d77e063b89bfd",
+      "size_bytes": 341624
+    },
+    {
+      "path": "models/cdmm-ssm/seed103/normalization_mean.npy",
+      "sha256": "95b43a5a337bfa4b82c4e0a1c99feb8b11b2d11b447aaa63d68865f2249b97b7",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/cdmm-ssm/seed103/normalization_meta.json",
+      "sha256": "d073311fd2058b38cc748296e647920eaa713170a5e3da7ac329b6ef5cc3cdc7",
+      "size_bytes": 114
+    },
+    {
+      "path": "models/cdmm-ssm/seed103/normalization_std.npy",
+      "sha256": "5b04dd79ecfa09afbcc9a94fb6b1f5864ab6f906297b91b25b3a48c99aa54e67",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/gru-ar/seed101/config.json",
+      "sha256": "dd6ff748cdb6226d107e6eae87be13591806a4524370bed9370d8fce59740ac1",
+      "size_bytes": 2947
+    },
+    {
+      "path": "models/gru-ar/seed101/model.safetensors",
+      "sha256": "0e8feea8c6d56b7a7e552353f8fa1d154bd1dc0335c739891eb2db96da8fdfd6",
+      "size_bytes": 769536
+    },
+    {
+      "path": "models/gru-ar/seed101/normalization_mean.npy",
+      "sha256": "95b43a5a337bfa4b82c4e0a1c99feb8b11b2d11b447aaa63d68865f2249b97b7",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/gru-ar/seed101/normalization_meta.json",
+      "sha256": "d073311fd2058b38cc748296e647920eaa713170a5e3da7ac329b6ef5cc3cdc7",
+      "size_bytes": 114
+    },
+    {
+      "path": "models/gru-ar/seed101/normalization_std.npy",
+      "sha256": "5b04dd79ecfa09afbcc9a94fb6b1f5864ab6f906297b91b25b3a48c99aa54e67",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/gru-ar/seed102/config.json",
+      "sha256": "a2a55293b9d8519e010d3ee7517a877316ab39e2ebe0a4a591d03bc29210c4ba",
+      "size_bytes": 3002
+    },
+    {
+      "path": "models/gru-ar/seed102/model.safetensors",
+      "sha256": "8650db7244ca5f0e0c2512235dbfb9fa55501ad9f686d8fffb4e5a4f183fbaee",
+      "size_bytes": 769536
+    },
+    {
+      "path": "models/gru-ar/seed102/normalization_mean.npy",
+      "sha256": "95b43a5a337bfa4b82c4e0a1c99feb8b11b2d11b447aaa63d68865f2249b97b7",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/gru-ar/seed102/normalization_meta.json",
+      "sha256": "d073311fd2058b38cc748296e647920eaa713170a5e3da7ac329b6ef5cc3cdc7",
+      "size_bytes": 114
+    },
+    {
+      "path": "models/gru-ar/seed102/normalization_std.npy",
+      "sha256": "5b04dd79ecfa09afbcc9a94fb6b1f5864ab6f906297b91b25b3a48c99aa54e67",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/gru-ar/seed103/config.json",
+      "sha256": "8898b3b58c2a4cc5bb3407663dc5170916d7f7fad713324e7660e898a31f25fc",
+      "size_bytes": 3002
+    },
+    {
+      "path": "models/gru-ar/seed103/model.safetensors",
+      "sha256": "42cb287d7eca912a15a7719e542b467181ca79e3af228a70cee7eb3f1f0201fd",
+      "size_bytes": 769536
+    },
+    {
+      "path": "models/gru-ar/seed103/normalization_mean.npy",
+      "sha256": "95b43a5a337bfa4b82c4e0a1c99feb8b11b2d11b447aaa63d68865f2249b97b7",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/gru-ar/seed103/normalization_meta.json",
+      "sha256": "d073311fd2058b38cc748296e647920eaa713170a5e3da7ac329b6ef5cc3cdc7",
+      "size_bytes": 114
+    },
+    {
+      "path": "models/gru-ar/seed103/normalization_std.npy",
+      "sha256": "5b04dd79ecfa09afbcc9a94fb6b1f5864ab6f906297b91b25b3a48c99aa54e67",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/mlp-2p/seed42/config.json",
+      "sha256": "58e35436f1bf0f9d8eda41ad31578a089beb9498a75eca14895ee2e2c5cccb43",
+      "size_bytes": 1683
+    },
+    {
+      "path": "models/mlp-2p/seed42/model.safetensors",
+      "sha256": "2367cd73032fcbe970e92f0ea9bf6b62b1d958f6bcbea3aa938d0e8d51965adc",
+      "size_bytes": 396564
+    },
+    {
+      "path": "models/one-step/seed101/config.json",
+      "sha256": "03be59635d884e91c9b49321b6853a7fbc490f2a3ab12d640268e2d646b1f470",
+      "size_bytes": 2751
+    },
+    {
+      "path": "models/one-step/seed101/model.safetensors",
+      "sha256": "e6a3dd676ec34d75e667e3e8faab39c88a12379d441d5d2ee1df97dcb2101c4a",
+      "size_bytes": 1112632
+    },
+    {
+      "path": "models/one-step/seed101/normalization_mean.npy",
+      "sha256": "95b43a5a337bfa4b82c4e0a1c99feb8b11b2d11b447aaa63d68865f2249b97b7",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/one-step/seed101/normalization_meta.json",
+      "sha256": "d073311fd2058b38cc748296e647920eaa713170a5e3da7ac329b6ef5cc3cdc7",
+      "size_bytes": 114
+    },
+    {
+      "path": "models/one-step/seed101/normalization_std.npy",
+      "sha256": "5b04dd79ecfa09afbcc9a94fb6b1f5864ab6f906297b91b25b3a48c99aa54e67",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/one-step/seed102/config.json",
+      "sha256": "19fdd16137b39a4929ac009c6033a1d0d63c1c820c5e6d7ea5bcba67e2547fd9",
+      "size_bytes": 2922
+    },
+    {
+      "path": "models/one-step/seed102/model.safetensors",
+      "sha256": "27016e84d25c319c41dc9b505537be9b6e075000a7a5d907843da8b470ca827b",
+      "size_bytes": 1112632
+    },
+    {
+      "path": "models/one-step/seed102/normalization_mean.npy",
+      "sha256": "95b43a5a337bfa4b82c4e0a1c99feb8b11b2d11b447aaa63d68865f2249b97b7",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/one-step/seed102/normalization_meta.json",
+      "sha256": "d073311fd2058b38cc748296e647920eaa713170a5e3da7ac329b6ef5cc3cdc7",
+      "size_bytes": 114
+    },
+    {
+      "path": "models/one-step/seed102/normalization_std.npy",
+      "sha256": "5b04dd79ecfa09afbcc9a94fb6b1f5864ab6f906297b91b25b3a48c99aa54e67",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/one-step/seed103/config.json",
+      "sha256": "91fe88d42690125f83a0ac4cbe4936ebd2acc41bbcde0b34d2ca5d472a708fbf",
+      "size_bytes": 2921
+    },
+    {
+      "path": "models/one-step/seed103/model.safetensors",
+      "sha256": "e3aca61eccdc704784cdcf9f9d5729f443f86035d1200f7a33d711c3b5d30fd2",
+      "size_bytes": 1112632
+    },
+    {
+      "path": "models/one-step/seed103/normalization_mean.npy",
+      "sha256": "95b43a5a337bfa4b82c4e0a1c99feb8b11b2d11b447aaa63d68865f2249b97b7",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/one-step/seed103/normalization_meta.json",
+      "sha256": "d073311fd2058b38cc748296e647920eaa713170a5e3da7ac329b6ef5cc3cdc7",
+      "size_bytes": 114
+    },
+    {
+      "path": "models/one-step/seed103/normalization_std.npy",
+      "sha256": "5b04dd79ecfa09afbcc9a94fb6b1f5864ab6f906297b91b25b3a48c99aa54e67",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/tf/seed101/config.json",
+      "sha256": "ec2a637a3fe7591974c9bb0408357941c3012a84fd8f7349327797a55b5fde87",
+      "size_bytes": 2411
+    },
+    {
+      "path": "models/tf/seed101/model.safetensors",
+      "sha256": "9f888a3aaf76210a17296f2711acef951b7b90bc10c9ada7910124eb5c6a16f2",
+      "size_bytes": 1135408
+    },
+    {
+      "path": "models/tf/seed101/normalization_mean.npy",
+      "sha256": "95b43a5a337bfa4b82c4e0a1c99feb8b11b2d11b447aaa63d68865f2249b97b7",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/tf/seed101/normalization_meta.json",
+      "sha256": "d073311fd2058b38cc748296e647920eaa713170a5e3da7ac329b6ef5cc3cdc7",
+      "size_bytes": 114
+    },
+    {
+      "path": "models/tf/seed101/normalization_std.npy",
+      "sha256": "5b04dd79ecfa09afbcc9a94fb6b1f5864ab6f906297b91b25b3a48c99aa54e67",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/tf/seed102/config.json",
+      "sha256": "0fd0657a78f1e4c2def0c9de2be5aec8ec1ffc6eb3844d54eff36373fbe28af1",
+      "size_bytes": 2758
+    },
+    {
+      "path": "models/tf/seed102/model.safetensors",
+      "sha256": "00bb3b689daad99fd7833e7ba1cd2a24d675fc7034df6a24262d5b6bf2b78c74",
+      "size_bytes": 1135408
+    },
+    {
+      "path": "models/tf/seed102/normalization_mean.npy",
+      "sha256": "95b43a5a337bfa4b82c4e0a1c99feb8b11b2d11b447aaa63d68865f2249b97b7",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/tf/seed102/normalization_meta.json",
+      "sha256": "d073311fd2058b38cc748296e647920eaa713170a5e3da7ac329b6ef5cc3cdc7",
+      "size_bytes": 114
+    },
+    {
+      "path": "models/tf/seed102/normalization_std.npy",
+      "sha256": "5b04dd79ecfa09afbcc9a94fb6b1f5864ab6f906297b91b25b3a48c99aa54e67",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/tf/seed103/config.json",
+      "sha256": "0398d3d3f193c83913bfd14a76352ffaaf23936ff4b52d8d0dac03c1bc183712",
+      "size_bytes": 2758
+    },
+    {
+      "path": "models/tf/seed103/model.safetensors",
+      "sha256": "d52b374d715cc3f0a5a1fdc37491c87793299eb3cd34748ebaade0e122fa2116",
+      "size_bytes": 1135408
+    },
+    {
+      "path": "models/tf/seed103/normalization_mean.npy",
+      "sha256": "95b43a5a337bfa4b82c4e0a1c99feb8b11b2d11b447aaa63d68865f2249b97b7",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/tf/seed103/normalization_meta.json",
+      "sha256": "d073311fd2058b38cc748296e647920eaa713170a5e3da7ac329b6ef5cc3cdc7",
+      "size_bytes": 114
+    },
+    {
+      "path": "models/tf/seed103/normalization_std.npy",
+      "sha256": "5b04dd79ecfa09afbcc9a94fb6b1f5864ab6f906297b91b25b3a48c99aa54e67",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/tf-qtl-kl/seed101/config.json",
+      "sha256": "eb125d908531af5919c5d2d5b6882dd2904f06209bf87daeba7c8fffdaad3334",
+      "size_bytes": 2969
+    },
+    {
+      "path": "models/tf-qtl-kl/seed101/model.safetensors",
+      "sha256": "312ff0b264c0791f71042e7e34b02599045efee1cd1d78d89ceb460fbefe2b44",
+      "size_bytes": 1135432
+    },
+    {
+      "path": "models/tf-qtl-kl/seed101/normalization_mean.npy",
+      "sha256": "95b43a5a337bfa4b82c4e0a1c99feb8b11b2d11b447aaa63d68865f2249b97b7",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/tf-qtl-kl/seed101/normalization_meta.json",
+      "sha256": "d073311fd2058b38cc748296e647920eaa713170a5e3da7ac329b6ef5cc3cdc7",
+      "size_bytes": 114
+    },
+    {
+      "path": "models/tf-qtl-kl/seed101/normalization_std.npy",
+      "sha256": "5b04dd79ecfa09afbcc9a94fb6b1f5864ab6f906297b91b25b3a48c99aa54e67",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/tf-qtl-kl/seed102/config.json",
+      "sha256": "0c043e777714fead8b5bdfe3da47124bec1123e85a5b265badcb8370b479b8a3",
+      "size_bytes": 2986
+    },
+    {
+      "path": "models/tf-qtl-kl/seed102/model.safetensors",
+      "sha256": "6b0213b586801bf9f410819d2c71a73a34f8668bc784b1d7e0e1e9ea882ebd16",
+      "size_bytes": 1135432
+    },
+    {
+      "path": "models/tf-qtl-kl/seed102/normalization_mean.npy",
+      "sha256": "95b43a5a337bfa4b82c4e0a1c99feb8b11b2d11b447aaa63d68865f2249b97b7",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/tf-qtl-kl/seed102/normalization_meta.json",
+      "sha256": "d073311fd2058b38cc748296e647920eaa713170a5e3da7ac329b6ef5cc3cdc7",
+      "size_bytes": 114
+    },
+    {
+      "path": "models/tf-qtl-kl/seed102/normalization_std.npy",
+      "sha256": "5b04dd79ecfa09afbcc9a94fb6b1f5864ab6f906297b91b25b3a48c99aa54e67",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/tf-qtl-kl/seed103/config.json",
+      "sha256": "89c0dfea0c4f55f083a2064fb838a52006d78c31d6c4d2b732a235bd3bab5aaa",
+      "size_bytes": 2986
+    },
+    {
+      "path": "models/tf-qtl-kl/seed103/model.safetensors",
+      "sha256": "1c24c6b8b85ecf9af8cc311be3b0cbf63a080b28aabbfb812c9f5ef23a537e48",
+      "size_bytes": 1135432
+    },
+    {
+      "path": "models/tf-qtl-kl/seed103/normalization_mean.npy",
+      "sha256": "95b43a5a337bfa4b82c4e0a1c99feb8b11b2d11b447aaa63d68865f2249b97b7",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/tf-qtl-kl/seed103/normalization_meta.json",
+      "sha256": "d073311fd2058b38cc748296e647920eaa713170a5e3da7ac329b6ef5cc3cdc7",
+      "size_bytes": 114
+    },
+    {
+      "path": "models/tf-qtl-kl/seed103/normalization_std.npy",
+      "sha256": "5b04dd79ecfa09afbcc9a94fb6b1f5864ab6f906297b91b25b3a48c99aa54e67",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/var/seed101/config.json",
+      "sha256": "1debfebad745bd862293e79b84a119849a2b2b58259966c4882d93ac0af1fb4e",
+      "size_bytes": 2047
+    },
+    {
+      "path": "models/var/seed101/model.safetensors",
+      "sha256": "81453a7c2e9f0443cb57e05ea28618a6ee4646bcfffac996da5c95792ad95147",
+      "size_bytes": 92544
+    },
+    {
+      "path": "models/var/seed101/normalization_mean.npy",
+      "sha256": "95b43a5a337bfa4b82c4e0a1c99feb8b11b2d11b447aaa63d68865f2249b97b7",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/var/seed101/normalization_meta.json",
+      "sha256": "d073311fd2058b38cc748296e647920eaa713170a5e3da7ac329b6ef5cc3cdc7",
+      "size_bytes": 114
+    },
+    {
+      "path": "models/var/seed101/normalization_std.npy",
+      "sha256": "5b04dd79ecfa09afbcc9a94fb6b1f5864ab6f906297b91b25b3a48c99aa54e67",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/var/seed102/config.json",
+      "sha256": "230c3b94dffaffced8e0c7203904759f2483346f1d5f864250eb0c9f308e3874",
+      "size_bytes": 2025
+    },
+    {
+      "path": "models/var/seed102/model.safetensors",
+      "sha256": "6a38c884d90f322d5e8b69243fe28c6421c55193e7099e9fe638c13e3ab79165",
+      "size_bytes": 92544
+    },
+    {
+      "path": "models/var/seed102/normalization_mean.npy",
+      "sha256": "7c292a1bcfe5ca5a7a4a796940b1c3f2cba739de9f62c051055f8cc6e7355629",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/var/seed102/normalization_meta.json",
+      "sha256": "d073311fd2058b38cc748296e647920eaa713170a5e3da7ac329b6ef5cc3cdc7",
+      "size_bytes": 114
+    },
+    {
+      "path": "models/var/seed102/normalization_std.npy",
+      "sha256": "a3eaa61248d617e966c63d0dde37114e49ca33c1061c31a73bfa3fe89348b2e5",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/var/seed103/config.json",
+      "sha256": "85527d248bf42aafb7b5a559d7a7b463bb0eb8fa64cb21c5333e237474693b7c",
+      "size_bytes": 2026
+    },
+    {
+      "path": "models/var/seed103/model.safetensors",
+      "sha256": "32e2b965c1fade327b5daaf38e8ba38a7f3be9d95fe7d3c40c515ae8a24d0c31",
+      "size_bytes": 92544
+    },
+    {
+      "path": "models/var/seed103/normalization_mean.npy",
+      "sha256": "d8587b50125b4772555290d5765288e31e5fcd9db11097c6afdf3f9d6536538d",
+      "size_bytes": 192
+    },
+    {
+      "path": "models/var/seed103/normalization_meta.json",
+      "sha256": "d073311fd2058b38cc748296e647920eaa713170a5e3da7ac329b6ef5cc3cdc7",
+      "size_bytes": 114
+    },
+    {
+      "path": "models/var/seed103/normalization_std.npy",
+      "sha256": "774ca6ca2ef4cff29eea58b6cef6f6c449bd11fcfe619c6a045b1ecb3c725a0b",
+      "size_bytes": 192
+    }
+  ],
+  "schema_version": 1,
+  "total_size_bytes": 17716645
+}

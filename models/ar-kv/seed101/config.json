@@ -1,0 +1,89 @@
+{
+  "architecture": "transformer-kv",
+  "architecture_config": {
+    "T_in": 90,
+    "T_out": 90,
+    "d_ff": 128,
+    "d_model": 64,
+    "dropout": 0.05,
+    "n_heads": 8,
+    "n_layers": 8,
+    "n_vars": 16
+  },
+  "checkpoint_metrics": {
+    "epoch": 81,
+    "mode": "AR_KV",
+    "mode_label": "KV Autoregressive",
+    "train_loss": 0.7150798173660927,
+    "val_loss": 0.7491162767012914
+  },
+  "model_family": "ar-kv",
+  "normalization": {
+    "mean_file": "normalization_mean.npy",
+    "metadata_file": "normalization_meta.json",
+    "required": true,
+    "source": "release-fallback-matching-training-split",
+    "source_base": "train_norm_stats_data100_ba16_Tin90_Tout90_splitseed101",
+    "std_file": "normalization_std.npy"
+  },
+  "notes": [],
+  "objective": {
+    "mode_recorded_in_checkpoint": "AR_KV"
+  },
+  "schema_version": 1,
+  "seed": 101,
+  "task": "widefield-90-to-90",
+  "training_config": {
+    "T_in": 90,
+    "T_out": 90,
+    "accumulation_steps": 2,
+    "batch_size": 1024,
+    "checkpoint_every": 25,
+    "checkpoint_first_epoch": 5,
+    "d_ff": 128,
+    "d_model": 64,
+    "data_path": "data_processed/data100_ba16.npy",
+    "dropout": 0.05,
+    "early_stop_min_delta": 1e-06,
+    "early_stop_patience": 150,
+    "effective_batch_size": 2000,
+    "learning_rate": 0.0001,
+    "log_all_loss_terms": true,
+    "log_per_region": false,
+    "loss_cross_weight": 0.0,
+    "loss_deriv_weight": 0.0,
+    "loss_mae_weight": 1.0,
+    "loss_shape_weight": 0.0,
+    "loss_type": "combined",
+    "loss_var_weight": 0.0,
+    "max_lr": 0.0003,
+    "n_heads": 8,
+    "n_layers": 8,
+    "n_vars": 16,
+    "num_epochs": 150,
+    "patch_len": 1,
+    "plot_dir": "evaluation",
+    "random_seed": 101,
+    "save_dir": "checkpoints",
+    "save_every": 15,
+    "scheduler_anneal_strategy": "cos",
+    "scheduler_div_factor": 25,
+    "scheduler_final_div_factor": 100,
+    "scheduler_pct_start": 0.3,
+    "train_ratio": 0.8,
+    "use_mixed_precision": true,
+    "use_torch_compile": true
+  },
+  "weights": {
+    "dtype": [
+      "torch.float32"
+    ],
+    "file": "model.safetensors",
+    "format": "safetensors",
+    "original_checkpoint": null,
+    "parameter_count": 281616,
+    "selection": "validation-selected best checkpoint",
+    "source_checkpoint": "checkpoints_AR_KV_seed101/best_model.pt",
+    "tensor_count": 104
+  }
+}

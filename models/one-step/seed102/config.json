@@ -1,0 +1,95 @@
+{
+  "architecture": "transformer-kv",
+  "architecture_config": {
+    "T_in": 90,
+    "T_out": 1,
+    "d_ff": 128,
+    "d_model": 64,
+    "dropout": 0.05,
+    "n_heads": 8,
+    "n_layers": 8,
+    "n_vars": 16
+  },
+  "checkpoint_metrics": {
+    "epoch": 142,
+    "mode": "TF",
+    "mode_label": "Teacher Forcing",
+    "train_loss": 0.12048467708394882,
+    "val_loss": 0.09013529183963935
+  },
+  "model_family": "one-step",
+  "normalization": {
+    "mean_file": "normalization_mean.npy",
+    "metadata_file": "normalization_meta.json",
+    "required": true,
+    "source": "checkpoint-config",
+    "source_base": "train_norm_stats_data100_ba16_Tin90_Tout1_splitseed101",
+    "std_file": "normalization_std.npy"
+  },
+  "notes": [
+    "Legacy one-step seed102/seed103 checkpoints record mode='TF'; the one-step family assignment is based on T_out=1 and the source checkpoint directory."
+  ],
+  "objective": {
+    "mode_recorded_in_checkpoint": "TF"
+  },
+  "schema_version": 1,
+  "seed": 102,
+  "task": "widefield-90-to-1",
+  "training_config": {
+    "T_in": 90,
+    "T_out": 1,
+    "accumulation_steps": 2,
+    "batch_size": 1024,
+    "checkpoint_every": 25,
+    "checkpoint_first_epoch": 5,
+    "d_ff": 128,
+    "d_model": 64,
+    "data_path": "data_processed/data100_ba16.npy",
+    "dropout": 0.05,
+    "early_stop_min_delta": 1e-06,
+    "early_stop_patience": 150,
+    "effective_batch_size": 2000,
+    "learning_rate": 0.0001,
+    "log_all_loss_terms": true,
+    "log_per_region": false,
+    "loss_cross_weight": 0.0,
+    "loss_deriv_weight": 0.0,
+    "loss_mae_weight": 1.0,
+    "loss_shape_weight": 0.0,
+    "loss_type": "combined",
+    "loss_var_weight": 0.0,
+    "max_lr": 0.0003,
+    "n_heads": 8,
+    "n_layers": 8,
+    "n_vars": 16,
+    "normalization_stats_base": "data_processed/train_norm_stats_data100_ba16_Tin90_Tout1_splitseed101",
+    "num_epochs": 150,
+    "patch_len": 1,
+    "plot_dir": "evaluation",
+    "processed_val_examples_path": "data_processed/processed_val_data100_ba16_Tin90_Tout1_splitseed101.npy",
+    "processed_val_seq_indices_path": "data_processed/processed_val_seq_indices_data100_ba16_Tin90_Tout1_splitseed101.npy",
+    "save_dir": "checkpoints",
+    "save_every": 15,
+    "scheduler_anneal_strategy": "cos",
+    "scheduler_div_factor": 25,
+    "scheduler_final_div_factor": 100,
+    "scheduler_pct_start": 0.3,
+    "split_seed": 101,
+    "train_ratio": 0.8,
+    "training_seed": 102,
+    "use_mixed_precision": true,
+    "use_torch_compile": true
+  },
+  "weights": {
+    "dtype": [
+      "torch.float32"
+    ],
+    "file": "model.safetensors",
+    "format": "safetensors",
+    "original_checkpoint": null,
+    "parameter_count": 275920,
+    "selection": "validation-selected best checkpoint",
+    "source_checkpoint": "checkpoints_1_step_seed102/best_model.pt",
+    "tensor_count": 104
+  }
+}

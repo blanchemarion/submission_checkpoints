@@ -1,0 +1,75 @@
+{
+  "architecture": "mlp-2p",
+  "architecture_config": {
+    "T_in": 90,
+    "T_out": 1,
+    "d_local": 64,
+    "d_pop": 128,
+    "decay_init": 0.965,
+    "dropout": 0.05,
+    "n_neurons": 88,
+    "use_slope_summary": true
+  },
+  "checkpoint_metrics": {
+    "split_info": {
+      "gap_used": 810,
+      "test": [
+        34582,
+        39732
+      ],
+      "train": [
+        0,
+        27812
+      ],
+      "val": [
+        28622,
+        33772
+      ]
+    },
+    "target_scale": 0.27886146456003186
+  },
+  "model_family": "mlp-2p",
+  "normalization": null,
+  "notes": [],
+  "objective": {
+    "mode_recorded_in_checkpoint": null
+  },
+  "schema_version": 1,
+  "seed": 42,
+  "task": "two-photon-90-to-1",
+  "training_config": {
+    "T_in": 90,
+    "T_out": 1,
+    "batch_size": 32,
+    "csv_path": "data_raw/2p_traces/Data_Valence_FULL_A_3_1189451_Session_10_C_dec_10Hz.csv",
+    "d_local": 64,
+    "d_pop": 128,
+    "decay_init": 0.965,
+    "dropout": 0.05,
+    "epochs": 25,
+    "grad_clip": 1.0,
+    "loss_beta": 2.0,
+    "lr": 0.001,
+    "max_weight": 10.0,
+    "max_windows": null,
+    "num_workers": 0,
+    "output_dir": "checkpoints_POCO_LITE_2P",
+    "seed": 42,
+    "split_gap": null,
+    "stride": 1,
+    "target_scale_quantile": 0.95,
+    "weight_decay": 0.0001
+  },
+  "weights": {
+    "dtype": [
+      "torch.float32"
+    ],
+    "file": "model.safetensors",
+    "format": "safetensors",
+    "original_checkpoint": null,
+    "parameter_count": 98649,
+    "selection": "validation-selected best checkpoint",
+    "source_checkpoint": "checkpoints_MLP_2P/best_model.pt",
+    "tensor_count": 22
+  }
+}

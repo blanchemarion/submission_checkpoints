@@ -1,0 +1,94 @@
+{
+  "architecture": "gru-ar",
+  "architecture_config": {
+    "context_length": 90,
+    "dropout": 0.05,
+    "forecast_length": 90,
+    "hidden_dim": 64,
+    "n_vars": 16,
+    "num_layers": 8
+  },
+  "checkpoint_metrics": {
+    "epoch": 14,
+    "mode": "GRU_AR",
+    "model_class": "GRUAR",
+    "parameter_count": 191632,
+    "train_loss": 0.4836112267159401,
+    "val_autoregressive_loss": 0.699241558710734,
+    "val_teacher_forced_loss": 0.47144535928964615
+  },
+  "model_family": "gru-ar",
+  "normalization": {
+    "mean_file": "normalization_mean.npy",
+    "metadata_file": "normalization_meta.json",
+    "required": true,
+    "source": "checkpoint-config",
+    "source_base": "train_norm_stats_data100_ba16_Tin90_Tout90_seed101_gru_ar",
+    "std_file": "normalization_std.npy"
+  },
+  "notes": [],
+  "objective": {
+    "mode_recorded_in_checkpoint": "GRU_AR"
+  },
+  "schema_version": 1,
+  "seed": 101,
+  "task": "widefield-90-to-90",
+  "training_config": {
+    "T_in": 90,
+    "T_out": 90,
+    "accumulation_steps": 2,
+    "batch_size": 1024,
+    "checkpoint_every": 25,
+    "checkpoint_first_epoch": 5,
+    "data_filename": "data100_ba16.npy",
+    "data_layout": "NCT_on_disk_BTC_in_model",
+    "data_path": "data_processed/data100_ba16.npy",
+    "drop_last_train": true,
+    "dropout": 0.05,
+    "early_stop_min_delta": 1e-06,
+    "early_stop_patience": 150,
+    "effective_batch_size": 2048,
+    "globals_path": "globals.json",
+    "gradient_clip": 1.0,
+    "hidden_dim": 64,
+    "learning_rate": 0.0001,
+    "max_lr": 0.0003,
+    "model_name": "GRU_AR",
+    "n_vars": 16,
+    "normalization": "per_region_train_input_only_zscore",
+    "normalization_stats_base": "data_processed/train_norm_stats_data100_ba16_Tin90_Tout90_seed101_gru_ar",
+    "num_epochs": 150,
+    "num_layers": 8,
+    "parameter_count": 191632,
+    "processed_val_examples_path": "data_processed/processed_val_data100_ba16_Tin90_Tout90_seed101_gru_ar.npy",
+    "processed_val_seq_indices_path": "data_processed/processed_val_seq_indices_data100_ba16_Tin90_Tout90_seed101_gru_ar.npy",
+    "random_seed": 101,
+    "save_dir": "checkpoints_GRU_AR_90_90",
+    "scheduler_anneal_strategy": "cos",
+    "scheduler_div_factor": 25,
+    "scheduler_final_div_factor": 100,
+    "scheduler_pct_start": 0.3,
+    "split_method": "sequence_id",
+    "train_ratio": 0.8,
+    "transformer_reference": {
+      "d_ff": 128,
+      "d_model": 64,
+      "dropout": 0.05,
+      "n_heads": 8,
+      "n_layers": 8
+    },
+    "use_mixed_precision": true
+  },
+  "weights": {
+    "dtype": [
+      "torch.float32"
+    ],
+    "file": "model.safetensors",
+    "format": "safetensors",
+    "original_checkpoint": null,
+    "parameter_count": 191632,
+    "selection": "validation-selected best checkpoint",
+    "source_checkpoint": "checkpoints_GRU_AR_90_90_seed101/best_model.pt",
+    "tensor_count": 36
+  }
+}

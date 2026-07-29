@@ -1,0 +1,64 @@
+{
+  "shape": [
+    287,
+    211,
+    16,
+    180
+  ],
+  "dimensions": {
+    "sequences": 287,
+    "subsequences": 211,
+    "regions": 16,
+    "timepoints": 180
+  },
+  "region_names": [
+    "primary-motor-area-layer-1-a",
+    "primary-motor-area-layer-1-b",
+    "primary-somatosensory-area-barrel-field-layer-1-a",
+    "primary-somatosensory-area-barrel-field-layer-1-b",
+    "primary-somatosensory-area-lower-limb-layer-1-a",
+    "primary-somatosensory-area-lower-limb-layer-1-b",
+    "primary-somatosensory-area-upper-limb-layer-1-a",
+    "primary-somatosensory-area-upper-limb-layer-1-b",
+    "primary-visual-area-layer-1-a",
+    "primary-visual-area-layer-1-b",
+    "retrosplenial-area-dorsal-part-layer-1-a",
+    "retrosplenial-area-dorsal-part-layer-1-b",
+    "retrosplenial-area-lateral-agranular-part-layer-1-a",
+    "retrosplenial-area-lateral-agranular-part-layer-1-b",
+    "secondary-motor-area-layer-1-a",
+    "secondary-motor-area-layer-1-b"
+  ],
+  "n_sequences": 287,
+  "max_subsequences_per_sequence": 211,
+  "partition": {
+    "sequence_partition": "25",
+    "sequence_frac": 1.0,
+    "n_sequence_ids_total": 287,
+    "n_sequence_ids_kept": 287,
+    "sequence_sample_seed": 42,
+    "brain_partition": "ba2",
+    "n_brain_regions_in_array": 16,
+    "region_names": [
+      "primary-motor-area-layer-1-a",
+      "primary-motor-area-layer-1-b",
+      "primary-somatosensory-area-barrel-field-layer-1-a",
+      "primary-somatosensory-area-barrel-field-layer-1-b",
+      "primary-somatosensory-area-lower-limb-layer-1-a",
+      "primary-somatosensory-area-lower-limb-layer-1-b",
+      "primary-somatosensory-area-upper-limb-layer-1-a",
+      "primary-somatosensory-area-upper-limb-layer-1-b",
+      "primary-visual-area-layer-1-a",
+      "primary-visual-area-layer-1-b",
+      "retrosplenial-area-dorsal-part-layer-1-a",
+      "retrosplenial-area-dorsal-part-layer-1-b",
+      "retrosplenial-area-lateral-agranular-part-layer-1-a",
+      "retrosplenial-area-lateral-agranular-part-layer-1-b",
+      "secondary-motor-area-layer-1-a",
+      "secondary-motor-area-layer-1-b"
+    ],
+    "train_T_in": 90,
+    "train_T_out": 90,
+    "train_file_stem": "data100_ba16"
+  }
+}

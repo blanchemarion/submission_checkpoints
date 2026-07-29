@@ -1,0 +1,146 @@
+{
+  "architecture": "cdmm-ssm",
+  "architecture_config": {
+    "context_length": 90,
+    "decoder_hidden_dims": [
+      32,
+      32
+    ],
+    "encoder_hidden_dim": 96,
+    "forecast_length": 90,
+    "latent_dim": 12,
+    "max_log_variance": 8.0,
+    "min_log_variance": -12.0,
+    "min_scale": 0.0001,
+    "n_vars": 16,
+    "posterior_hidden_dim": 96,
+    "spectral_radius": 0.99,
+    "transition_hidden_dim": 64
+  },
+  "checkpoint_metrics": {
+    "beta": 0.1181818181818182,
+    "epoch": 27,
+    "mode": "cDMM_SSM",
+    "model_class": "ConditionalDeepMarkovSSM",
+    "parameter_count": 84724,
+    "train_metrics": {
+      "emission_std": 0.9645025057995573,
+      "kl_free_bits": 181.18219708381815,
+      "kl_per_latent_step": 0.15575788439588345,
+      "kl_raw": 168.2185178716132,
+      "kl_regularizer_total": 2463.1734385388963,
+      "loss": 1831.2870782081118,
+      "overshooting_kl_free_bits": 9127.964885305852,
+      "overshooting_kl_raw": 9126.263651097075,
+      "posterior_reconstruction_mae": 0.39504140298417273,
+      "posterior_reconstruction_mse": 0.3485977630665962,
+      "reconstruction_nll": 1540.1847651055518,
+      "transition_std": 0.10615639451970445
+    },
+    "transition_spectral_norm": 0.9900000095367432,
+    "validation_mean_forecast_mse": 0.8673350439092262,
+    "validation_metrics": {
+      "forecast_temporal_std": 0.2796667740808279,
+      "mae": 0.6773459275866609,
+      "mse": 0.8673350439092262,
+      "persistence_mse": 1.9543817866935411,
+      "target_temporal_std": 0.7635594103183987,
+      "zero_mse": 1.0008449107175283
+    }
+  },
+  "model_family": "cdmm-ssm",
+  "normalization": {
+    "mean_file": "normalization_mean.npy",
+    "metadata_file": "normalization_meta.json",
+    "required": true,
+    "source": "checkpoint-config",
+    "source_base": "train_norm_stats_data100_ba16_Tin90_Tout90_splitseed101_cdmm_z12",
+    "std_file": "normalization_std.npy"
+  },
+  "notes": [],
+  "objective": {
+    "mode_recorded_in_checkpoint": "cDMM_SSM"
+  },
+  "schema_version": 1,
+  "seed": 103,
+  "task": "widefield-90-to-90",
+  "training_config": {
+    "T_in": 90,
+    "T_out": 90,
+    "accumulation_steps": 2,
+    "batch_size": 1024,
+    "beta_anneal_fraction": 0.3,
+    "beta_max": 0.2,
+    "checkpoint_every": 25,
+    "checkpoint_first_epoch": 5,
+    "data_filename": "data100_ba16.npy",
+    "data_layout": "NCT_on_disk_BTC_in_model",
+    "data_path": "data_processed/data100_ba16.npy",
+    "decoder_hidden_dims": [
+      32,
+      32
+    ],
+    "drop_last_train": true,
+    "early_stop_min_delta": 1e-06,
+    "early_stop_patience": 150,
+    "effective_batch_size": 2048,
+    "encoder_hidden_dim": 96,
+    "free_bits": 0.05,
+    "globals_path": "globals.json",
+    "gradient_clip": 1.0,
+    "latent_dim": 12,
+    "learning_rate": 0.0001,
+    "max_log_variance": 8.0,
+    "max_lr": 0.0003,
+    "min_log_variance": -12.0,
+    "min_scale": 0.0001,
+    "model_name": "cDMM_SSM",
+    "n_vars": 16,
+    "normalization": "per_region_train_input_only_zscore",
+    "normalization_stats_base": "data_processed/train_norm_stats_data100_ba16_Tin90_Tout90_splitseed101_cdmm_z12",
+    "num_epochs": 150,
+    "overshooting_horizons": [
+      5,
+      15,
+      30
+    ],
+    "overshooting_num_anchors": 4,
+    "overshooting_weight": 0.25,
+    "parameter_count": 84724,
+    "posterior_hidden_dim": 96,
+    "processed_val_examples_path": "data_processed/processed_val_data100_ba16_Tin90_Tout90_splitseed101_cdmm_z12.npy",
+    "processed_val_seq_indices_path": "data_processed/processed_val_seq_indices_data100_ba16_Tin90_Tout90_splitseed101_cdmm_z12.npy",
+    "save_dir": "checkpoints_cDMM_SSM_z12_90_90",
+    "scheduler_anneal_strategy": "cos",
+    "scheduler_div_factor": 25,
+    "scheduler_final_div_factor": 100,
+    "scheduler_pct_start": 0.3,
+    "spectral_radius": 0.99,
+    "split_method": "sequence_id",
+    "split_seed": 101,
+    "supported_latent_dims": [
+      4,
+      8,
+      12,
+      16
+    ],
+    "train_ratio": 0.8,
+    "training_seed": 103,
+    "transition_hidden_dim": 64,
+    "use_mixed_precision": true,
+    "validation_num_samples": 16,
+    "validation_seed": 103
+  },
+  "weights": {
+    "dtype": [
+      "torch.float32"
+    ],
+    "file": "model.safetensors",
+    "format": "safetensors",
+    "original_checkpoint": null,
+    "parameter_count": 84724,
+    "selection": "validation-selected best checkpoint",
+    "source_checkpoint": "checkpoints_cDMM_SSM_z12_90_90_seed103/best_model.pt",
+    "tensor_count": 29
+  }
+}
