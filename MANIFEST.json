@@ -4,8 +4,8 @@
   "files": [
     {
       "path": "LICENSE",
-      "sha256": "301166a45e0859ebb42ef9a96a57bb328e1ffa72896d419cdc7073a19a4508b5",
-      "size_bytes": 1091
+      "sha256": "0aadca21706ffa5430d4947401a782e56d23304c15fddf7bdc355181e46f7c65",
+      "size_bytes": 1095
     },
     {
       "path": "metadata/widefield_data_metadata.json",
@@ -529,17 +529,17 @@
     },
     {
       "path": "models/var/seed102/config.json",
-      "sha256": "230c3b94dffaffced8e0c7203904759f2483346f1d5f864250eb0c9f308e3874",
-      "size_bytes": 2025
+      "sha256": "cbfabe5abc87078d32bb5d2098a36e897cef012230498136ea6649f0162335a1",
+      "size_bytes": 2080
     },
     {
       "path": "models/var/seed102/model.safetensors",
-      "sha256": "6a38c884d90f322d5e8b69243fe28c6421c55193e7099e9fe638c13e3ab79165",
+      "sha256": "d574b32d1209b6047bcec30ab6fb56e03a79fe5089f7d82ab6db0a1b012986a6",
       "size_bytes": 92544
     },
     {
       "path": "models/var/seed102/normalization_mean.npy",
-      "sha256": "7c292a1bcfe5ca5a7a4a796940b1c3f2cba739de9f62c051055f8cc6e7355629",
+      "sha256": "95b43a5a337bfa4b82c4e0a1c99feb8b11b2d11b447aaa63d68865f2249b97b7",
       "size_bytes": 192
     },
     {
@@ -549,22 +549,22 @@
     },
     {
       "path": "models/var/seed102/normalization_std.npy",
-      "sha256": "a3eaa61248d617e966c63d0dde37114e49ca33c1061c31a73bfa3fe89348b2e5",
+      "sha256": "5b04dd79ecfa09afbcc9a94fb6b1f5864ab6f906297b91b25b3a48c99aa54e67",
       "size_bytes": 192
     },
     {
       "path": "models/var/seed103/config.json",
-      "sha256": "85527d248bf42aafb7b5a559d7a7b463bb0eb8fa64cb21c5333e237474693b7c",
-      "size_bytes": 2026
+      "sha256": "fec88765fecc54734e1697512a47ee9642634cffcbaa24d7b25de44ce6aff766",
+      "size_bytes": 2080
     },
     {
       "path": "models/var/seed103/model.safetensors",
-      "sha256": "32e2b965c1fade327b5daaf38e8ba38a7f3be9d95fe7d3c40c515ae8a24d0c31",
+      "sha256": "4ee9cbc44dad59eb98505dfb2b9729169e97bb6eaecafeec33673bcc9b42c008",
       "size_bytes": 92544
     },
     {
       "path": "models/var/seed103/normalization_mean.npy",
-      "sha256": "d8587b50125b4772555290d5765288e31e5fcd9db11097c6afdf3f9d6536538d",
+      "sha256": "95b43a5a337bfa4b82c4e0a1c99feb8b11b2d11b447aaa63d68865f2249b97b7",
       "size_bytes": 192
     },
     {
@@ -574,10 +574,10 @@
     },
     {
       "path": "models/var/seed103/normalization_std.npy",
-      "sha256": "774ca6ca2ef4cff29eea58b6cef6f6c449bd11fcfe619c6a045b1ecb3c725a0b",
+      "sha256": "5b04dd79ecfa09afbcc9a94fb6b1f5864ab6f906297b91b25b3a48c99aa54e67",
       "size_bytes": 192
     }
   ],
   "schema_version": 1,
-  "total_size_bytes": 17716645
+  "total_size_bytes": 17716758
 }

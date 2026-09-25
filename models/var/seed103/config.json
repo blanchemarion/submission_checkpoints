@@ -8,9 +8,9 @@
   },
   "checkpoint_metrics": {
     "epoch": 4,
-    "train_loss": 0.21230367344358694,
-    "val_ar_loss": 0.6317822933197021,
-    "val_tf_loss": 0.20677718023459116
+    "train_loss": 0.21267969711967136,
+    "val_ar_loss": 0.6348614792029063,
+    "val_tf_loss": 0.20166895041863123
   },
   "model_family": "var",
   "normalization": {
@@ -18,7 +18,7 @@
     "metadata_file": "normalization_meta.json",
     "required": true,
     "source": "checkpoint-config",
-    "source_base": "train_norm_stats_data100_ba16_Tin90_Tout90_seed103_var",
+    "source_base": "train_norm_stats_data100_ba16_Tin90_Tout90_splitseed101_var",
     "std_file": "normalization_std.npy"
   },
   "notes": [],
@@ -40,14 +40,15 @@
     "learning_rate": 0.001,
     "model_name": "VAR_BASELINE",
     "n_vars": 16,
-    "normalization_stats_base": "data_processed/train_norm_stats_data100_ba16_Tin90_Tout90_seed103_var",
+    "normalization_stats_base": "data_processed/train_norm_stats_data100_ba16_Tin90_Tout90_splitseed101_var",
     "num_epochs": 150,
     "num_workers": 8,
-    "processed_val_examples_path": "data_processed/processed_val_data100_ba16_Tin90_Tout90_seed103_var.npy",
-    "processed_val_seq_indices_path": "data_processed/processed_val_seq_indices_data100_ba16_Tin90_Tout90_seed103_var.npy",
-    "random_seed": 103,
-    "save_dir": "checkpoints_VAR_BASELINE_90_90",
+    "processed_val_examples_path": "data_processed/processed_val_data100_ba16_Tin90_Tout90_splitseed101_var.npy",
+    "processed_val_seq_indices_path": "data_processed/processed_val_seq_indices_data100_ba16_Tin90_Tout90_splitseed101_var.npy",
+    "save_dir": "checkpoints_VAR_BASELINE_90_90_seed103",
+    "split_seed": 101,
     "train_ratio": 0.8,
+    "training_seed": 103,
     "weight_decay": 1e-05
   },
   "weights": {
